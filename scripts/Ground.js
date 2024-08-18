@@ -2,14 +2,15 @@ const landDom = document.querySelector(".land");
 const landDomStyle = getComputedStyle(landDom);
 const landWidth = parseFloat(landDomStyle.width);
 const landHeight = parseFloat(landDomStyle.height);
+
 class Land extends Rectangle {
-  constructor() {
+  constructor(speed) {
     super(
       landWidth,
       landHeight,
       0,
       parseFloat(landDomStyle.top),
-      -100,
+      speed,
       0,
       landDom
     );
@@ -20,7 +21,3 @@ class Land extends Rectangle {
     }
   }
 }
-const land = new Land();
-setInterval(() => {
-  land.move(16 / 1000);
-}, 16);

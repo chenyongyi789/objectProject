@@ -14,6 +14,7 @@ class Rectangle {
     this.xSpeed = xSpeed;
     this.ySpeed = ySpeed;
     this.dom = dom;
+    this.render();
   }
   render() {
     this.dom.style.width = this.width + "px";

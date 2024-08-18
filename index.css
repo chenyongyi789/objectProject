@@ -67,3 +67,13 @@
 .info{
     text-align: center;
 }
+.infoScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.score {
+    color: red;
+    margin-left: 10px;
+}
